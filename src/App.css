@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+  border: 25px solid #899a42;
+  padding: 30px;
+  color: black;
+  font-family: sans-serif;
+}
+
+.beast {
+  border: 1px solid #899a42;
+  
+}
