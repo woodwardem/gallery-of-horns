@@ -1,12 +1,14 @@
 import React from 'react';
+
+
 class FilterForm extends React.Component {
     render() {
         return (
             <>
                 <form className="form">
-                    <label for="numOfHorns">Filter by Horns</label>
+                    <Form.Label for="numOfHorns">Filter by Horns</Form.Label>
                     <br />
-                    <select className="formSelect" name="numOfHorns">
+                    <Form.Select className="formSelect" name="numOfHorns">
 
 
                         <option>ALL THE HORNS!</option>
@@ -14,7 +16,7 @@ class FilterForm extends React.Component {
                         <option>Two Horns</option>
                         <option>Three Horns</option>
                         <option>More Horns Than I Can Count!</option>
-                    </select>
+                    </Form.Select>
                 </form>
 
             </>

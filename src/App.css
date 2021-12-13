@@ -26,3 +26,8 @@ h1 {
 
  
   
+form {
+  border:  2px 2px slateblue;
+  font-style: initial;
+font-family: cursive;
+}
