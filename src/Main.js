@@ -2,7 +2,6 @@ import React from 'react';
 import HornedBeast from './HornedBeast.js';
 import beastData from './beastData.json';
 import Container from "react-bootstrap/Container";
-import Form from 'react-bootstrap/FilterForm.js';
 import Row from "react-bootstrap/Row";
 import FilterForm from "./FilterForm";
 
