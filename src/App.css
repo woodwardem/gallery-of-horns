@@ -11,10 +11,10 @@
 
 .beast {
   border: 4px solid steelblue;
-  margin: 17px;
+  margin: 20px;
   border-radius: 12px;
   background: lightblue;
-  
+  text-align: center;
 }
 
 .beastImg {
@@ -25,17 +25,17 @@
   margin-top: 20px;
 }
 
-h1 {
+ /* h1 {
   text-shadow: 3px 3px lightblue;
   font-size: 55px;
-  /* margin-bottom: 5px; */
+   margin-bottom: 5px; 
   padding-bottom: 5px;
-}
+} 
 
- 
+  */
   
-form {
-  border:  3px 3px blue;
-  font-style: initial;
-font-family: cursive;
+.form {
+  border: 3px solid blue;
+  /* font-style: initial;
+  font-family: cursive; */
 }
