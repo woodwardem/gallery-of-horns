@@ -6,18 +6,35 @@ import Row from "react-bootstrap/Row";
 import FilterForm from "./FilterForm";
 
 class Main extends React.Component {
+constructor(props) {
+super(props);
+this.state ={
+    gallery: beastData
+};
+};
+
+    updateGallery = (numOfHorns) => {
+        let gallery = beastData;
+        if (numOfHorns) {
+    gallery = beastData.filter(beastObj => beastObj.horns === numOfHorns);
+        }
+        this.setState({ gallery: gallery });
+    }
+
+
+
     render() {
         return (
             <Container>
-                <FilterForm />
+                <FilterForm updateGallery={this.updateGallery}/>
                 <Row xs={1} md={2} lg={3} xl={4}>
 
-                    {beastData.map((beast, idx) => (
+                    {this.state.gallery.map((beast, idx) => (
                         <HornedBeast key={idx} beastObj={beast} />
                     ))}
-                    
+
                 </Row>
-                
+
             </Container>
 
         )

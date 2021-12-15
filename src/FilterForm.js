@@ -1,21 +1,21 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
-import beastData from './beastData.json'
 class FilterForm extends React.Component {
 
 filter = (event) => {
     console.log('event.target.value: ', event.target.value);
     const numOfHorns = parseInt(event.target.value);
-    let gallery = beastData;
-    if (numOfHorns) {
-gallery = beastData.filter(beastObj => beastObj.horns === numOfHorns);
-    }
+   
+    this.props.updateGallery(numOfHorns);
+
 }
 //TODO: Lift the new state of the gallery to it's parent component, to be rendered.
 
     render() {
         return (
             <>
+            <Container>
                 <Form className="form">
                     <Form.Label for="numOfHorns">Filter by Horns</Form.Label>
                     <br />
@@ -29,7 +29,7 @@ gallery = beastData.filter(beastObj => beastObj.horns === numOfHorns);
                         <option value='100'>More Horns Than I Can Count!</option>
                     </Form.Select>
                 </Form>
-
+</Container>
             </>
         )
     }
