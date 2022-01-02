@@ -1,12 +1,46 @@
 .App {
   text-align: center;
-  border: 25px solid #899a42;
+  border: 25px solid steelblue;
   padding: 30px;
   color: black;
-  font-family: sans-serif;
+  font-style: initial;
+  font-family: cursive;
+  background: lightyellow;
+  
 }
 
 .beast {
-  border: 1px solid #899a42;
+  border: 4px solid steelblue;
+  margin: 20px;
+  border-radius: 12px;
+  background: lightblue;
+  text-align: center;
+}
+
+.beastImg {
+  border: 2px solid black;
+  border-radius: 12px;
+}
+.beastDescription {
+  margin-top: 20px;
+}
+
+ h1 {
+  text-shadow: 3px 3px lightblue;
+  font-size: 65px;
+   margin-bottom: 5px; 
+  padding-bottom: 5px;
+} 
+
   
+  
+.formSelect {
+  border: 3px solid steelblue;
+  /* font-style: initial;
+  font-family: cursive; */
+}
+
+.form {
+  width: 200px;
+  margin-left: 43%;
 }

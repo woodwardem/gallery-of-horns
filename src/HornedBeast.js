@@ -19,8 +19,8 @@ class HornedBeast extends React.Component {
 
     render() {
         return (
-            <Card className="beast" onClick={this.addFavorites}
-            > <Card.Title>{this.props.beastObj.title}</Card.Title>
+            <Card className="beast" onClick={this.addFavorites} style={{ width: '13rem'}}>
+             <Card.Title>{this.props.beastObj.title}</Card.Title>
                 <Card.Img
                     src={this.props.beastObj.image_url}
                     alt={this.props.beastObj.description}
